@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"
+publish = "dist"
+functions = "netlify/functions"
+
+
+# Proxy frontend calls -> Netlify Functions
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
