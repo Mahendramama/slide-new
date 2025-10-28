@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Prefer Odia-capable fonts; fall back gracefully */
+:root {
+--odia-font: 'Noto Sans Oriya', 'Noto Serif Oriya', 'Kalinga', 'Kohinoor Odia', 'Lohit Odia', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
